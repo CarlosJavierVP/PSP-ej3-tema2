@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        VariableCompartida vc = new VariableCompartida(10);
+        VariableCompartida vc = new VariableCompartida(0);
 
         HebraProductora hp = new HebraProductora(vc);
         HebraConsumidora hc = new HebraConsumidora(vc);

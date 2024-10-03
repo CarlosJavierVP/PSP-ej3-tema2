@@ -8,12 +8,11 @@ public class HebraConsumidora implements Runnable{
         this.vc = vc;
     }
 
-    public void getter(){
-        System.out.println(vc.getV());
-    }
 
     @Override
     public void run() {
-        getter();
+        for (int i = 0; i<100; i++){
+            System.out.println(vc.getV());
+        }
     }
 }

@@ -7,16 +7,12 @@ public class HebraProductora implements Runnable{
         this.vc = vc;
     }
 
-
-    public void setter(){
-        for(int i = 0; i <100; i++){
-            vc.setV(vc.getV()+10);
-        }
-    }
-
     @Override
     public void run() {
-        setter();
+        for(int i = 0; i <100; i++){
+            vc.setV(i);
+
+        }
 
     }
 }
